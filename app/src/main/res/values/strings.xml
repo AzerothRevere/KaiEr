@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">KaiEr</string>
+
+    <string name="calculation">计算</string>
+    <string name="ware_house">仓库</string>
+    <string name="product">产品</string>
+    <string name="user">个人</string>
 </resources>
