@@ -1,6 +1,7 @@
 package com.eatchicken.kaier.widgets;
 
 import android.content.Context;
+import android.support.v4.content.ContextCompat;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -48,26 +49,50 @@ public class HomeTab extends LinearLayout {
         calculation.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
+                initTabColor();
+                calculation.setCompoundDrawablesWithIntrinsicBounds(null, ContextCompat.getDrawable(activity, R.mipmap.calculation_on), null, null);
+                calculation.setTextColor(ContextCompat.getColor(activity, R.color.dark1));
                 activity.replaceContent(new CalculationFragment());
             }
         });
         wareHouse.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
+                initTabColor();
+                wareHouse.setCompoundDrawablesWithIntrinsicBounds(null, ContextCompat.getDrawable(activity, R.mipmap.ware_house_on), null, null);
+                wareHouse.setTextColor(ContextCompat.getColor(activity, R.color.dark1));
                 activity.replaceContent(new WareHouseFragment());
             }
         });
         product.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
+                initTabColor();
+                product.setCompoundDrawablesWithIntrinsicBounds(null, ContextCompat.getDrawable(activity, R.mipmap.product_on), null, null);
+                product.setTextColor(ContextCompat.getColor(activity, R.color.dark1));
                 activity.replaceContent(new ProductFragment());
             }
         });
         user.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
+                initTabColor();
+                user.setCompoundDrawablesWithIntrinsicBounds(null, ContextCompat.getDrawable(activity, R.mipmap.user_on), null, null);
+                user.setTextColor(ContextCompat.getColor(activity, R.color.dark1));
                 activity.replaceContent(new UserFragment());
             }
         });
+    }
+
+    private void initTabColor() {
+        calculation.setTextColor(ContextCompat.getColor(activity, R.color.purple1));
+        product.setTextColor(ContextCompat.getColor(activity, R.color.purple1));
+        wareHouse.setTextColor(ContextCompat.getColor(activity, R.color.purple1));
+        user.setTextColor(ContextCompat.getColor(activity, R.color.purple1));
+
+        calculation.setCompoundDrawablesWithIntrinsicBounds(null, ContextCompat.getDrawable(activity, R.mipmap.calculation_off), null, null);
+        product.setCompoundDrawablesWithIntrinsicBounds(null, ContextCompat.getDrawable(activity, R.mipmap.product_off), null, null);
+        wareHouse.setCompoundDrawablesWithIntrinsicBounds(null, ContextCompat.getDrawable(activity, R.mipmap.ware_house_off), null, null);
+        user.setCompoundDrawablesWithIntrinsicBounds(null, ContextCompat.getDrawable(activity, R.mipmap.user_off), null, null);
     }
 }
