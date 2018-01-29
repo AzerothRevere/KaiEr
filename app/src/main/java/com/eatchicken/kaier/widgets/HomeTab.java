@@ -8,12 +8,18 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.eatchicken.kaier.R;
+import com.eatchicken.kaier.activity.BaseActivity;
+import com.eatchicken.kaier.fragment.CalculationFragment;
+import com.eatchicken.kaier.fragment.UserFragment;
+import com.eatchicken.kaier.fragment.WareHouseFragment;
+import com.eatchicken.kaier.fragment.ProductFragment;
 
 public class HomeTab extends LinearLayout {
     private TextView calculation;
     private TextView wareHouse;
     private TextView product;
     private TextView user;
+    private BaseActivity activity;
 
     public HomeTab(Context context) {
         this(context, null);
@@ -26,6 +32,7 @@ public class HomeTab extends LinearLayout {
     public HomeTab(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         View view = LayoutInflater.from(context).inflate(R.layout.view_home_tab, this);
+        this.activity = (BaseActivity) context;
         initView(view);
         setEvent();
     }
@@ -41,25 +48,25 @@ public class HomeTab extends LinearLayout {
         calculation.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
-                //TODO go to calculation
+                activity.replaceContent(new CalculationFragment());
             }
         });
         wareHouse.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
-                //TODO go to wareHouse
+                activity.replaceContent(new WareHouseFragment());
             }
         });
         product.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
-                //TODO go to product
+                activity.replaceContent(new ProductFragment());
             }
         });
         user.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
-                //TODO go to user
+                activity.replaceContent(new UserFragment());
             }
         });
     }

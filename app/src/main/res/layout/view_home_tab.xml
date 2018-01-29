@@ -3,42 +3,55 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_gravity="bottom"
-    android:background="@color/white">
+    android:background="@color/white"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp">
 
     <TextView
         android:id="@+id/calculation"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:drawableTop="@mipmap/ic_launcher"
+        android:drawableTop="@mipmap/calculation"
         android:gravity="center"
-        android:text="@string/calculation" />
+        android:text="@string/calculation"
+        android:textColor="@color/purple1"
+        android:textSize="10dp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/ware_house"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:drawableTop="@mipmap/ic_launcher"
+        android:drawableTop="@mipmap/ware_house"
         android:gravity="center"
-        android:text="@string/ware_house" />
+        android:text="@string/ware_house"
+        android:textColor="@color/purple1"
+        android:textSize="10dp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/product"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:drawableTop="@mipmap/ic_launcher"
+        android:drawableTop="@mipmap/product"
         android:gravity="center"
-        android:text="@string/product" />
+        android:text="@string/product"
+        android:textColor="@color/purple1"
+        android:textSize="10dp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/user"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:drawableTop="@mipmap/ic_launcher"
+        android:drawableTop="@mipmap/user"
         android:gravity="center"
-        android:text="@string/user" />
-
+        android:text="@string/user"
+        android:textColor="@color/purple1"
+        android:textSize="10dp"
+        android:textStyle="bold" />
 </LinearLayout>
