@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@color/white"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp">
+
+    <TextView
+        android:id="@+id/calculation"
+        style="@style/TabTextViewStyle"
+        android:drawableTop="@mipmap/calculation_on"
+        android:text="@string/calculation" />
+
+    <TextView
+        android:id="@+id/ware_house"
+        style="@style/TabTextViewStyle"
+        android:drawableTop="@mipmap/ware_house_off"
+        android:text="@string/ware_house" />
+
+    <TextView
+        android:id="@+id/product"
+        style="@style/TabTextViewStyle"
+        android:drawableTop="@mipmap/product_off"
+        android:text="@string/product" />
+
+    <TextView
+        android:id="@+id/user"
+        style="@style/TabTextViewStyle"
+        android:drawableTop="@mipmap/user_off"
+        android:text="@string/user" />
+</LinearLayout>
