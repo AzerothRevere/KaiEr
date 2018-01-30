@@ -17,4 +17,22 @@
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>
     </style>
+
+    <style name="ProfileTextViewStyle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/dark2</item>
+        <item name="android:textSize">@dimen/text_size12</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/height40</item>
+        <item name="android:layout_marginStart">@dimen/margin16</item>
+    </style>
+
+    <style name="LineStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/height1</item>
+        <item name="android:layout_marginEnd">@dimen/margin10</item>
+        <item name="android:layout_marginStart">@dimen/margin10</item>
+        <item name="android:background">@color/colorAccent</item>
+    </style>
 </resources>

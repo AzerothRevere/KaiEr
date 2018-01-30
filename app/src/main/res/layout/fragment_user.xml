@@ -2,10 +2,57 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     android:orientation="vertical">
 
+    <include layout="@layout/layout_comment_title" />
+
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/user" />
+        android:id="@+id/today_profit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height40"
+        android:layout_marginStart="@dimen/margin16"
+        android:layout_marginTop="@dimen/margin30"
+        android:gravity="center_vertical"
+        android:text="@string/today_profit"
+        android:textSize="@dimen/text_size18"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/total_profit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height40"
+        android:layout_marginStart="@dimen/margin16"
+        android:gravity="center_vertical"
+        android:text="@string/total_profit"
+        android:textSize="@dimen/text_size18"
+        android:textStyle="bold" />
+
+    <View
+        style="@style/LineStyle"
+        android:layout_marginTop="@dimen/margin16" />
+
+    <TextView
+        style="@style/ProfileTextViewStyle"
+        android:text="@string/user_level" />
+
+    <View style="@style/LineStyle" />
+
+    <TextView
+        style="@style/ProfileTextViewStyle"
+        android:text="@string/default_product" />
+
+    <View style="@style/LineStyle" />
+
+    <TextView
+        style="@style/ProfileTextViewStyle"
+        android:text="@string/about_us" />
+
+    <View style="@style/LineStyle" />
+
+    <TextView
+        style="@style/ProfileTextViewStyle"
+        android:text="@string/submission" />
+
+    <View style="@style/LineStyle" />
 </LinearLayout>
