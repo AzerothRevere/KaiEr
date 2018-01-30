@@ -4,7 +4,6 @@
     android:id="@+id/activity_launch"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/tutorial"
-    tools:context="com.eatchicken.kaier.activity.LaunchActivity">
+    android:background="@mipmap/tutorial">
 
 </RelativeLayout>

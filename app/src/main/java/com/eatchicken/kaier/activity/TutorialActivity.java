@@ -10,19 +10,23 @@ import com.eatchicken.kaier.R;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class LaunchActivity extends AppCompatActivity {
-    public static final int END_TIME = 3000;
+public class TutorialActivity extends AppCompatActivity {
+    private static final int END_TIME = 3000;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_launch);
-        final Intent intent = new Intent(this,HomeActivity.class);
+        toHomeActivity();
+    }
+
+    private void toHomeActivity() {
         Timer timer = new Timer();
         TimerTask timerTask = new TimerTask() {
             @Override
             public void run() {
+                Intent intent = new Intent(TutorialActivity.this,HomeActivity.class);
                 startActivity(intent);
                 finish();
             }
