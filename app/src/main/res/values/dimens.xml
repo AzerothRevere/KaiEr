@@ -9,7 +9,9 @@
     <dimen name="margin30">30dp</dimen>
 
     <dimen name="padding16">16dp</dimen>
+    <dimen name="padding5">5dp</dimen>
 
     <dimen name="height1">1dp</dimen>
     <dimen name="height40">40dp</dimen>
+    <dimen name="height45">45dp</dimen>
 </resources>

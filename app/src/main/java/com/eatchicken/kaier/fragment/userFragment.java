@@ -29,8 +29,6 @@ public class UserFragment extends Fragment {
         todayProfit = view.findViewById(R.id.today_profit);
         totalProfit = view.findViewById(R.id.total_profit);
         title = view.findViewById(R.id.title);
-        todayProfit.setText(getString(R.string.today_profit, 7889));
-        totalProfit.setText(getString(R.string.total_profit, 21127889));
         title.setText(getString(R.string.user));
     }
 }
