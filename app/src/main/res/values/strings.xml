@@ -6,6 +6,7 @@
     <string name="ware_house">仓库</string>
     <string name="product">产品</string>
     <string name="user">个人</string>
+    <string name="empty_text">什么都没有哦，赶紧去进货吧！！！</string>
 
     <!--个人-->
     <string name="user_level">个人等级</string>
@@ -14,4 +15,10 @@
     <string name="submission">意见投稿</string>
     <string name="total_profit">总&#8194;盈&#8194;利：%1$d元</string>
     <string name="today_profit">今日盈利：%1$d元</string>
+
+    <!--仓库-->
+    <string name="amount_of_money">仓库总金额：%1$d元</string>
+    <string name="out_warehouse">出库</string>
+    <string name="input_warehouse">入库</string>
+
 </resources>

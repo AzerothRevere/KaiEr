@@ -2,10 +2,68 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <include layout="@layout/layout_comment_title" />
+
+    <ImageView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/ware_house" />
+        android:scaleType="fitXY"
+        android:src="@mipmap/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin16"
+        android:background="@color/white"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/amount_of_money"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/amount_of_money"
+            android:textColor="@color/dark2"
+            android:textSize="@dimen/text_size18"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/out_warehouse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/in_warehouse" />
+
+        <ImageView
+            android:id="@+id/input_warehouse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin16"
+            android:src="@mipmap/out_warehouse" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height1"
+        android:background="@color/colorAccent" />
+
+    <ListView
+        android:id="@+id/product_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/transparent"
+        android:dividerHeight="0dp"
+        android:scrollbars="none" />
+
+    <TextView
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/empty_text"
+        android:textColor="@color/gray1"
+        android:textSize="@dimen/text_size14"
+        android:textStyle="bold" />
 </LinearLayout>
