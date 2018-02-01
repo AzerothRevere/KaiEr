@@ -11,6 +11,10 @@
 
     <color name="dark1">#474165</color>
     <color name="dark2">#333333</color>
+    <color name="dark3">#505050</color>
 
     <color name="gray1">#bbbbbb</color>
+    <color name="gray2">#efefef</color>
+
+
 </resources>

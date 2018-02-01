@@ -21,4 +21,10 @@
     <string name="out_warehouse">出库</string>
     <string name="input_warehouse">入库</string>
 
+    <!--计算-->
+    <string name="clear">清除</string>
+    <string name="amount">数量:</string>
+    <string name="agent_level">代理等级:</string>
+    <string name="product1">产品:</string>
+    <string name="add_to_calculation">添加到计算</string>
 </resources>
