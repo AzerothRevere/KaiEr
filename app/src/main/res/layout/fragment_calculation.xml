@@ -4,30 +4,30 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <include layout="@layout/layout_comment_title"/>
+    <include layout="@layout/layout_comment_title" />
 
     <EditText
+        android:id="@+id/result"
         android:layout_width="match_parent"
         android:layout_height="@dimen/height40"
-        android:id="@+id/result"
-        android:layout_marginTop="@dimen/margin30"
-        android:layout_marginStart="@dimen/margin16"
         android:layout_marginEnd="@dimen/margin16"
-        android:background="@drawable/edittext_bg"/>
+        android:layout_marginStart="@dimen/margin16"
+        android:layout_marginTop="@dimen/margin30"
+        android:background="@drawable/edittext_bg" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:layout_marginEnd="@dimen/margin16"
         android:layout_marginStart="@dimen/margin16"
-        android:layout_marginEnd="@dimen/margin16">
+        android:orientation="horizontal">
 
         <EditText
             android:id="@+id/out_look_text_view"
             android:layout_width="0dp"
             android:layout_height="@dimen/height120"
             android:layout_weight="5"
-            android:background="@drawable/edittext_bg"/>
+            android:background="@drawable/edittext_bg" />
 
         <LinearLayout
             android:layout_width="0dp"
@@ -40,16 +40,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:text="@string/calculation"
-                android:background="@drawable/edittext_bg"/>
+                android:background="@drawable/edittext_bg"
+                android:text="@string/calculation" />
 
             <Button
                 android:id="@+id/btn_clear"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:text="@string/clear"
-                android:background="@drawable/edittext_bg"/>
+                android:background="@drawable/edittext_bg"
+                android:text="@string/clear" />
 
         </LinearLayout>
 
@@ -58,95 +58,95 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/height40"
-        android:orientation="horizontal"
-        android:layout_marginTop="@dimen/margin16"
+        android:layout_marginEnd="@dimen/margin16"
         android:layout_marginStart="@dimen/margin16"
-        android:layout_marginEnd="@dimen/margin16">
+        android:layout_marginTop="@dimen/margin16"
+        android:orientation="horizontal">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
             android:text="@string/product1"
-            android:textSize="@dimen/text_size14"
-            android:layout_gravity="center_vertical"/>
+            android:textSize="@dimen/text_size14" />
 
         <Spinner
             android:id="@+id/spinner_product"
             android:layout_width="0dp"
             android:layout_height="@dimen/height30"
-            android:layout_weight="1"
             android:layout_gravity="center_vertical"
-            android:background="@drawable/edittext_bg"
-            android:layout_marginStart="@dimen/margin90"/>
+            android:layout_marginStart="@dimen/margin90"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_bg" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/height40"
-        android:layout_marginTop="@dimen/margin10"
-        android:layout_marginStart="@dimen/margin16"
         android:layout_marginEnd="@dimen/margin16"
+        android:layout_marginStart="@dimen/margin16"
+        android:layout_marginTop="@dimen/margin10"
         android:orientation="horizontal">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
             android:text="@string/amount"
-            android:textSize="@dimen/text_size14"
-            android:layout_gravity="center_vertical"/>
+            android:textSize="@dimen/text_size14" />
 
         <EditText
             android:id="@+id/amount_text"
             android:layout_width="0dp"
             android:layout_height="@dimen/height30"
-            android:background="@drawable/edittext_bg"
+            android:layout_marginStart="@dimen/margin90"
             android:layout_weight="5"
-            android:inputType="number"
-            android:layout_marginStart="@dimen/margin90"/>
+            android:background="@drawable/edittext_bg"
+            android:inputType="number" />
 
         <Spinner
             android:id="@+id/spinner_box"
             android:layout_width="0dp"
             android:layout_height="@dimen/height30"
+            android:layout_marginStart="@dimen/margin10"
             android:layout_weight="3"
-            android:background="@drawable/edittext_bg"
-            android:layout_marginStart="@dimen/margin10"/>
+            android:background="@drawable/edittext_bg" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/height40"
-        android:layout_marginTop="@dimen/margin10"
-        android:layout_marginStart="@dimen/margin16"
         android:layout_marginEnd="@dimen/margin16"
+        android:layout_marginStart="@dimen/margin16"
+        android:layout_marginTop="@dimen/margin10"
         android:orientation="horizontal">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
             android:text="@string/agent_level"
-            android:textSize="@dimen/text_size14"
-            android:layout_gravity="center_vertical"/>
+            android:textSize="@dimen/text_size14" />
 
         <Spinner
+            android:id="@+id/spinner_agent_level"
             android:layout_width="0dp"
             android:layout_height="@dimen/height30"
-            android:layout_weight="0.62"
             android:layout_gravity="center_vertical"
-            android:background="@drawable/edittext_bg"
             android:layout_marginStart="@dimen/margin60"
-            android:id="@+id/spinner_agent_level" />
+            android:layout_weight="0.62"
+            android:background="@drawable/edittext_bg" />
 
     </LinearLayout>
-    
+
     <Button
         android:id="@+id/btn_add_to_calucation"
         android:layout_width="match_parent"
         android:layout_height="@dimen/height40"
-        android:layout_marginTop="@dimen/margin10"
-        android:layout_marginStart="@dimen/margin16"
         android:layout_marginEnd="@dimen/margin16"
-        android:text="@string/add_to_calculation"/>
+        android:layout_marginStart="@dimen/margin16"
+        android:layout_marginTop="@dimen/margin10"
+        android:text="@string/add_to_calculation" />
 </LinearLayout>
