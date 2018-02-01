@@ -15,6 +15,15 @@
         android:layout_marginTop="@dimen/margin30"
         android:background="@drawable/edittext_bg" />
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height1"
+        android:layout_marginBottom="@dimen/margin10"
+        android:layout_marginEnd="@dimen/margin16"
+        android:layout_marginStart="@dimen/margin16"
+        android:layout_marginTop="@dimen/margin10"
+        android:background="@color/colorAccent" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -23,11 +32,10 @@
         android:orientation="horizontal">
 
         <EditText
-            android:id="@+id/out_look_text_view"
+            android:id="@+id/calculate_input"
             android:layout_width="0dp"
             android:layout_height="@dimen/height120"
-            android:layout_weight="5"
-            android:background="@drawable/edittext_bg" />
+            android:layout_weight="5" />
 
         <LinearLayout
             android:layout_width="0dp"
@@ -41,19 +49,30 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:background="@drawable/edittext_bg"
-                android:text="@string/calculation" />
+                android:text="@string/calculation"
+                android:textSize="@dimen/text_size18" />
 
             <Button
                 android:id="@+id/btn_clear"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
+                android:layout_marginTop="@dimen/height1"
                 android:layout_weight="1"
                 android:background="@drawable/edittext_bg"
-                android:text="@string/clear" />
+                android:text="@string/clear"
+                android:textSize="@dimen/text_size18" />
 
         </LinearLayout>
 
     </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height1"
+        android:layout_marginEnd="@dimen/margin16"
+        android:layout_marginStart="@dimen/margin16"
+        android:layout_marginTop="@dimen/margin10"
+        android:background="@color/colorAccent" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -148,5 +167,6 @@
         android:layout_marginEnd="@dimen/margin16"
         android:layout_marginStart="@dimen/margin16"
         android:layout_marginTop="@dimen/margin10"
+        android:background="@drawable/edittext_bg"
         android:text="@string/add_to_calculation" />
 </LinearLayout>
