@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/agent_level_text"
+        android:layout_width="@dimen/margin90"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin16"
+        android:textSize="@dimen/text_size12"
+        android:textColor="@color/dark2"/>
+
+    <TextView
+        android:id="@+id/bag_price_text"
+        android:layout_width="@dimen/margin90"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size12"
+        android:textColor="@color/dark2"/>
+
+    <TextView
+        android:id="@+id/box_price_text"
+        android:layout_width="@dimen/margin90"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size12"
+        android:textColor="@color/dark2"/>
+
+</LinearLayout>

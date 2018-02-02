@@ -4,8 +4,84 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <include layout="@layout/layout_comment_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height40"
+        android:layout_marginEnd="@dimen/margin16"
+        android:layout_marginStart="@dimen/margin16"
+        android:layout_marginTop="@dimen/margin30"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height30"
+            android:layout_gravity="center_vertical"
+            android:text="@string/product"
+            android:textSize="@dimen/text_size18" />
+
+        <Spinner
+            android:id="@+id/select_product_spinner"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height30"
+            android:layout_marginStart="@dimen/margin60"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/edittext_bg"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height1"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="@dimen/margin10"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/product" />
+        android:layout_marginTop="@dimen/margin10"
+        android:layout_marginStart="@dimen/margin16">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size12"
+            android:text="@string/size"/>
+        
+        <TextView
+            android:id="@+id/set_amount_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:textSize="@dimen/text_size12"
+            android:layout_marginStart="@dimen/margin30"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size12"
+            android:text="@string/box"/>
+    </LinearLayout>
+    
+    <ListView
+        android:id="@+id/price_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin10"
+        android:layout_marginStart="@dimen/margin16"
+        android:divider="@color/transparent"
+        android:dividerHeight="0dp"
+        android:scrollbars="none"/>
+
+    <TextView
+        android:id="@+id/empty_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/empty_info"
+        android:textColor="@color/gray1"
+        android:textSize="@dimen/text_size14"
+        android:textStyle="bold" />
+
 </LinearLayout>

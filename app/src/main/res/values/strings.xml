@@ -27,4 +27,9 @@
     <string name="agent_level">代理等级:</string>
     <string name="product1">产品:</string>
     <string name="add_to_calculation">添加到计算</string>
+
+    <!--产品-->
+    <string name="size">规格：</string>
+    <string name="box">包/箱</string>
+    <string name="empty_info">还没有录入产品信息，点击此处录入！</string>
 </resources>
