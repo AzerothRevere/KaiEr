@@ -10,7 +10,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 
 import com.eatchicken.kaier.R;
-import com.eatchicken.kaier.adapter.PriceListAdapter;
+import com.eatchicken.kaier.adapter.ProductAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,7 +21,7 @@ public class ProductFragment extends Fragment {
     private TextView setAmount;
     private ListView priceListView;
     private TextView emptyText;
-    private PriceListAdapter priceListAdapter;
+    private ProductAdapter productAdapter;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -41,12 +41,13 @@ public class ProductFragment extends Fragment {
         priceListView = view.findViewById(R.id.price_list_view);
         emptyText = view.findViewById(R.id.empty_text_view);
         title.setText(R.string.product);
+        // TODO: 2018/2/2 test data,revise it when sqlite data is done. 
         List<String> priceList = new ArrayList<>();
         for (int i = 0; i < 10; i++) {
-            priceList.add("钻代："  + "60/包" + "180/箱");
+            priceList.add("钻代：" + "60/包" + "180/箱");
         }
-        priceListAdapter = new PriceListAdapter(getContext(), priceList);
+        productAdapter = new ProductAdapter(getContext(), priceList);
         priceListView.setEmptyView(emptyText);
-        priceListView.setAdapter(priceListAdapter);
+        priceListView.setAdapter(productAdapter);
     }
 }
