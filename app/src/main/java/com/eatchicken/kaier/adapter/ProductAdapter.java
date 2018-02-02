@@ -11,15 +11,12 @@ import com.eatchicken.kaier.R;
 
 import java.util.List;
 
-/**
- * Created by 13881599162 on 2018/2/2.
- */
 
-public class PriceListAdapter extends BaseAdapter {
+public class ProductAdapter extends BaseAdapter {
     private List<String> priceList;
     private Context context;
 
-    public PriceListAdapter(Context context, List<String> priceList) {
+    public ProductAdapter(Context context, List<String> priceList) {
         this.context = context;
         this.priceList = priceList;
     }
@@ -44,7 +41,7 @@ public class PriceListAdapter extends BaseAdapter {
         ViewHolder viewHolder;
         View view;
         if (convertView == null) {
-            view = LayoutInflater.from(context).inflate(R.layout.adapter_price_list, parent, false);
+            view = LayoutInflater.from(context).inflate(R.layout.adapter_product, parent, false);
             viewHolder = new ViewHolder();
             viewHolder.agentLevelText = view.findViewById(R.id.agent_level_text);
             viewHolder.bagPriceText = view.findViewById(R.id.bag_price_text);
@@ -65,6 +62,5 @@ public class PriceListAdapter extends BaseAdapter {
         TextView bagPriceText;
         TextView boxPriceText;
     }
-
 
 }
